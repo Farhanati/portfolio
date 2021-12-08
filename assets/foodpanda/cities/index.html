@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="images/choto.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Farhan copy</title>
+</head>
+<style>
+  .anchor {
+    color: black;
+  }
+
+  .anchor:hover {
+    color: #D70F64;
+  }
+
+  .fa-user {
+    background-color: #D70F64;
+    color: white;
+    border-radius: 100%;
+    padding: 4px;
+  }
+
+  .fab {
+    color: rgba(0, 0, 0, 0.555);
+  }
+
+  .fab:hover {
+    background-color: #D70F64;
+    color: #fff;
+    border-radius: 100%;
+  }
+
+  .fa-shopping-bag {
+    color: #D70F64;
+    border-radius: 100%;
+    padding: 4px;
+  }
+
+  .container1 {
+    background-repeat: no-repeat;
+    background-image: url(images/banner.webp);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position-x: 700px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group h1 {
+    font-size: 130px;
+    color: rgba(22, 22, 22, 0.075);
+    font-weight: bold;
+  }
+
+  .form-group p {
+    font-size: 30px;
+    position: relative;
+    /* bottom: 200px; */
+    color: rgba(0, 0, 0, 0.795);
+  }
+
+
+
+  .bottom {
+    position: relative;
+    top: 210px;
+  }
+
+  .btn1 {
+    background-color: #D70F64;
+    color: white;
+    padding: 9px;
+    margin-left: 50px;
+  }
+
+  .btn2 {
+    background-color: white;
+    color: black;
+    padding: 9px;
+  }
+
+  .img-background3 {
+    background-image: url(images/offive.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+  }
+
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+  }
+
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #D70F64;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    /* background: rgba(0, 0, 0, 0.363); */
+    -webkit-transform: translatey(-100px);
+    -ms-transform: translatey(-100px);
+    transform: translatey(-100px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 10px;
+  }
+
+  .hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 50px 0 0;
+    padding: 7px 14px;
+    background-color: #D70F64;
+  }
+
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #D70F64;
+  }
+
+  .hovereffect:hover img {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+  }
+
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .hovereffect:hover h2,
+  .hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+  }
+
+  .hovereffect:hover a.info {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+  }
+  .link a{
+    color: rgba(128, 128, 128, 0.795);
+  }
+  .link a:hover{
+    color: #D70F64;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top  shadow-sm">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: black;"><span class="span"> | </span> EN <span class="span"> |
+              </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="span" style="color: black;"> | </span> <span class="colm"> <i
+                  style=" text-align: center; " class="fas fa-user "></i></span> <span
+                style="color: black;">Login</span> <span class="span" style="color: black;">
+                | </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><span class="span" style="color: black;"> | </span><i
+                class="fas fa-shopping-bag"></i> <span class="span" style="color: black;"> | </span> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container1">
+    <div style=" bottom: 80px; position:relative;">
+      <p style="margin-left: 50px; " class="display-4">Food Delivery from <strong> ڪراچي Karachi’s </strong> Best </p>
+      <h5 style="margin-left: 50px;">Restaurants</h5>
+      <small style="margin-left: 50px; font-size: medium; color: rgba(128, 128, 128, 0.76);">The meals you love,
+        delivered with care</small>
+      <div class="hero-section-form"
+        style="align-items: center; text-align: center; margin-left: 50px; position: absolute; width: 800px; margin-top: 20px;">
+        <form method="GET" style="width: 100%;" class="location-form restaurants-search-form is-full-address "
+          id="delivery-information-postal-index-form">
+          <div class="address-search-container " id="address-search-container">
+            <div class="input-box js-input-box validation-wrapper big">
+              <input type="text" class="restaurants-search-form__input restaurants__location__input "
+                id="delivery-information-postal-index" name="" placeholder=" " value=""
+                data-msg_error_not_found="Something went wrong! We do not recognise the address you entered. Please try again."
+                data-msg_you_probably_mean="Does this postal code match your query?"
+                data-msg_error_geolocation="It was not possible to detect your location"
+                data-msg_error_empty="We need your address to find restaurants near you"
+                data-msg_error_postal_code="Please enter your street address and number"
+                data-msg_error_vendor_empty_address="Enter your address to see if this restaurant delivers to you." />
+              <div class="address-suggestions" id="address-suggestions"></div>
+              <label for="delivery-information-postal-index" style="width: 3000px;">Enter your full address</label>
+            </div>
+          </div>
+          <div class="button-container ">
+            <button
+              class="button restaurants-search-form__button js-restaurants-search-submit restaurants-search-form__button--full js-restaurants-search-button gtm-homepage-delivery-button restaurants-search-form__button--flexible"
+              data-gtm-cta="findRestaurant_main" data-testid="delivery_button">FIND RESTUARANTS NEAR YOU</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!---------third section--------->
+  <div class="container">
+    <div class="heading">
+      <p class="display-4">Popular restaurants</p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-3">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/1.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Hangout Burger Classic</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/2.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Cone Food Centre</strong><small><i class="fa fa-star"
+                style="color: #276FBF; "></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/3.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>DUA FAST FOOD</strong> <small><i class="fa fa-star"
+                style="color: #276FBF; "></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/4.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Cullinary Fast Food</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+                <div class="card-text">
+                  <small>$$$,beverages,pakistani</small>
+                </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/8.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>D'Food Chapter</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/7.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Hijazi Foods</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/6.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Tasty Bites PK</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/5.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Pizza top inn</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/13.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Crispy Point</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/14.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Al Hussain BBQ</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/15.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Areesha's Kitchen</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/16.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Hasnain Pakwan</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/17.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Delhi Spice</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/18.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>Pizza paradise</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/19.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>MAKKAH FOOD</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/20.webp" alt="">
+        </div>
+        <div class="card-title">
+          <p><strong>pasand Catering</strong> <small><i class="fa fa-star"
+                style="color: #276FBF;"></i>4.2/5</small> </p>
+          <div class="card-text">
+            <small>$$$,beverages,pakistani</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <hr>
+  <!-------------fifth section-->
+  <div class="container">
+    <h2>Food Delivery in Karachi From Only The Best Restaurants</h2>
+    <br>
+    <p>For those who like good food, exciting new options are now available in Karachi. Whether you live in Karachi, or are simply enjoying a holiday in the area, culinary delights aplenty are now just a simple online order away. The Karachi food delivery service has enjoyed a culinary renaissance in recent years, with a blossoming of new restaurants and take away eateries on almost every street; in fact, there are now literally hundreds of restaurants in Karachi, and foodpanda.com is the fastest, easiest and most reliable way of locating and ordering from the outlet of your choice. And whether you're in the mood for some comfortably familiar flavours, or fancy sampling some excitingly exotic dish, the meal of your choice is now just a few button clicks away, delivered fresh and piping hot to your door.</p>
+    <br>
+    <h2>Why food delivery from foodpanda?</h2>
+    <br>
+    <p>Our team of experts have paid a visit to every restaurant you’ll find here, and checked they’re up to our strict standards - only Karachi's most beloved spots are here to order from. Quickly place and pay for your order online, and find your food delivered straight to your door in no time at all.</p>
+    <br>
+    <h2>Discover the Best Restaurants in Karachi</h2>
+    <br>
+    <p>- Do you fancy fine, high quality food from an upscale, refined eatery? Then you'll love the Mediterranean, Italian fusion cuisine available at Okra restaurant, or Cafe Aylanto.</p>
+    <p>- Maybe you're in the mood for a hearty, beach-style barbecue? Kolachi restaurant or BBQ Tonight are ready and willing to oblige.</p>
+    <p>- Or perhaps you feel that spice is nice? Saffron or Dumpukht are two of the hottest Indian takeaways in town.</p>
+    <p>- And then there is the ultimate in social food, the pizza. Swap slices of this perennial crowd-pleaser with an order from Pompei Italian Restaurant Karachi, or 14th Street Pizza.</p>
+    <br>
+    <h2>Food for your friends or the office?</h2>
+    <br>
+    <p>Let us do the hard part of entertaining and bring the food right to you and your friends. Alternatively if you need to organize some catering for your co-workers, are working late, or want to treat the team, you can conveniently order straight to your office.</p>
+    
+    <br>
+  </div>
+  </div>
+  <hr>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/foot.PNG" alt="">
+      </div>
+      <div class="col-md-6">
+        <i style="font-size: 2.2rem;" class="fab fa-facebook offset-9"></i>
+        <i style="margin: 10px; font-size: 2.2rem;" class="fab fa-instagram  offset-"></i>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br><br>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <p>&copy; 2021 foodpanda</p>
+      </div>
+      <div class="col-md-6">
+        <p> <a href="#" class="anchor"> Press </a><a href="#" class="anchor"> Help Center</a> <a href="#"
+            class="anchor">Refunds with pandapay</a> <a href="#" class="anchor">Pandapay User Account<a href="#"
+              class="anchor"> Terms and Conditions</a> <a href="#" class="anchor">Terms and conditions<a href="#"
+                class="anchor"> Privacy policy <a href="#" class="anchor"> Security</a><a href="#" class="anchor">
+                  Download foodpanda Apps</a><a href="#" class="anchor"> Careers</a> <a href="#" class="anchor">Suggest
+                  a restaurant</a> <a href="#" class="anchor">Corporate Customer</a> <a href="#"
+                  class="anchor">foodpanda Magazine</a> <a href="#" class="anchor">Partner with us foodpanda</a> <a
+                  href="#" class="anchor">Vouchers&Promo</a> <a href="#" class="anchor">Ramzan Deals</a> <a href="#"
+                  class="anchor">Update on COVID-19 in Pakistan</a> <a href="#" class="anchor">pandamart</a><a href="#"
+                  class="anchor"> Grocery Delivery</a><a href="#" class="anchor"> foodpanda home chef </a></p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-4 link">
+        <p> <a href="#">AMERICAN FOOD DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Kababjees - Clifton,</a></small> <br>
+        <small><a href="#">KFC - Boat Basin</a></small><br>
+        <small><a href="#">McDonald's - Corniche,</a></small><br>
+        <small><a href="#">Red Apple - North Nazimabad,</a></small><br>
+        <small><a href="#">Burger Lab - Badar,</a></small><br>
+        <small><a href="#">Burger O'Clock</a></small>
+      </div>
+    
+      <div class="col-4 link">
+        <p> <a href="#">PIZZA DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Roll Inn,</a></small> <br>
+        <small><a href="#">Daily Dubai Restaurant,</a></small><br>
+        <small><a href="#">Cafeela,</a></small><br>
+        <small><a href="#">A-One Snacks,</a></small><br>
+        <small><a href="#">Student Biryani - Saddar,</a></small><br>
+        <small><a href="#">Chairman Mao</a></small>
+      </div>
+      <div class="col-4 link">
+        <p> <a href="#">PIZZA DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Pizza Hut - Khayaban E Shahbaz,</a></small> <br>
+        <small><a href="#">California Pizza - Rashid Minhas Road,</a></small><br>
+        <small><a href="#">Royal Taste Pizza - Malir,</a></small><br>
+        <small><a href="#">Pizza Lover - Gulshan,</a></small><br>
+        <small><a href="#">Pizza 99,</a></small><br>
+        <small><a href="#">Cafe Bogie</a></small>
+      </div>
+    </div>
+<br>
+    <div class="row">
+      <div class="col-4 link">
+        <p> <a href="#">ITALIAN FOOD DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Broadway Pizza - DHA,</a></small> <br>
+        <small><a href="#">14th Street Pizza Co. - DHA,</a></small><br>
+        <small><a href="#">Expresso Shabhaz,</a></small><br>
+        <small><a href="#">California Pizza - DHA,</a></small><br>
+        <small><a href="#">Bella Vita,</a></small><br>
+        <small><a href="#">Golden Bite Pizza</a></small>
+      </div>
+    
+      <div class="col-4 link">
+        <p> <a href="#">CHINESE FOOD DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Spicogetti,</a></small> <br>
+        <small><a href="#">La Chine By Kababjees,</a></small><br>
+        <small><a href="#">Dumpling's,</a></small><br>
+        <small><a href="#">China Ming,</a></small><br>
+        <small><a href="#">Chop Soy - Gulshan</a></small><br>
+        <small><a href="#">Choakas Food</a></small>
+      </div>
+      <div class="col-4 link">
+        <p> <a href="#">FAST FOOD DELIVERY IN KARACHI</a></p>
+        <small><a href="#">Kababjees - Johar,</a></small> <br>
+        <small><a href="#">Milano Pizza & Fast Food,</a></small><br>
+        <small><a href="#">Choakas Food,</a></small><br>
+        <small><a href="#">Burridos,</a></small><br>
+        <small><a href="#">Roll Corner BAR BQ INN,</a></small><br>
+        <small><a href="#">EatFit</a></small>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <footer>
+    <div class="container">
+      <p class="text-center">
+        Laos | Cambodia | Myanmar | Thailand | Hong Kong | Japan | Taiwan | Malaysia | Philippines | Singapore |
+        Bangladesh | Hungary | Germany | Austria | Norway | Sweden | Finland | Czech Republic | Slovakia</p>
+    </div>
+    <br>
+    <br>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<script src="script.js"></script>

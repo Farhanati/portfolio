@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="images/choto.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Farhan copy</title>
+</head>
+<style>
+  .anchor{
+    color: black;
+  }
+  .anchor:hover{
+    color: #D70F64;
+  }
+  .fa-user {
+    background-color: #D70F64;
+    color: white;
+    border-radius: 100%;
+    padding: 4px;
+  }
+  .fab{
+    color: rgba(0, 0, 0, 0.555);
+  }
+  .fab:hover{
+    background-color: #D70F64;
+    color: #fff;
+    border-radius: 100%;
+  }
+  .fa-shopping-bag {
+    color: #D70F64;
+    border-radius: 100%;
+    padding: 4px;
+  }
+
+  .container1 {
+    background-repeat: no-repeat;
+    background-image: url(images/banner.webp);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position-x: 500px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group h1 {
+    font-size: 130px;
+    color: rgba(22, 22, 22, 0.075);
+    font-weight: bold;
+  }
+
+  .form-group p {
+    font-size: 30px;
+    position: relative;
+    bottom: 200px;
+    color: rgba(0, 0, 0, 0.795);
+  }
+
+  .img-background {
+    background-image: url(images/second.PNG);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bottom {
+    position: relative;
+    top: 210px;
+  }
+
+  .btn1 {
+    background-color: #D70F64;
+    color: white;
+    padding: 9px;
+    margin-left: 50px;
+  }
+  .btn2 {
+    background-color: white;
+    color: black;
+    padding: 9px;
+  }
+  .img-background3 {
+    background-image: url(images/offive.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+  }
+
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+  }
+
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #D70F64;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.363);
+    -webkit-transform: translatey(-100px);
+    -ms-transform: translatey(-100px);
+    transform: translatey(-100px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 10px;
+  }
+
+  .hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 50px 0 0;
+    padding: 7px 14px;
+    background-color: #D70F64;
+  }
+
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #D70F64;
+  }
+
+  .hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .hovereffect:hover h2,
+  .hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+  }
+
+  .hovereffect:hover a.info {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top  shadow-sm">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: black;"><span class="span"> | </span> EN <span class="span"> |
+              </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="span" style="color: black;"> | </span> <span class="colm"> <i
+                  style=" text-align: center; " class="fas fa-user "></i></span> <span
+                style="color: black;">Login</span> <span class="span" style="color: black;">
+                | </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><span class="span" style="color: black;"> | </span><i
+                class="fas fa-shopping-bag"></i> <span class="span" style="color: black;"> | </span> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container1">
+    <div class="div">
+      <p style="margin-left: 50px; " class="display-4">It's the food and groceries you love,</p>
+      <h5 style="margin-left: 50px;">delivered</h5>
+      <div class="hero-section-form"
+        style="align-items: center; text-align: center; margin-left: 50px; position: absolute; width: 800px; margin-top: 30px;">
+        <form method="GET" style="width: 100%;" class="location-form restaurants-search-form is-full-address "
+          id="delivery-information-postal-index-form">
+          <div class="address-search-container " id="address-search-container">
+            <div class="input-box js-input-box validation-wrapper big">
+              <input type="text" class="restaurants-search-form__input restaurants__location__input "
+                id="delivery-information-postal-index" name="" placeholder=" " value=""
+                data-msg_error_not_found="Something went wrong! We do not recognise the address you entered. Please try again."
+                data-msg_you_probably_mean="Does this postal code match your query?"
+                data-msg_error_geolocation="It was not possible to detect your location"
+                data-msg_error_empty="We need your address to find restaurants near you"
+                data-msg_error_postal_code="Please enter your street address and number"
+                data-msg_error_vendor_empty_address="Enter your address to see if this restaurant delivers to you." />
+              <div class="address-suggestions" id="address-suggestions"></div>
+              <label for="delivery-information-postal-index" style="width: 1000px;">Enter your full address</label>
+
+            </div>
+          </div>
+          <div class="button-container two-buttons">
+            <button
+              class="button restaurants-search-form__button js-restaurants-search-submit restaurants-search-form__button--full js-restaurants-search-button gtm-homepage-delivery-button restaurants-search-form__button--flexible"
+              data-gtm-cta="findRestaurant_main" data-testid="delivery_button">Delivery</button>
+            <span class="button-text-separator">
+              or
+            </span>
+            <button
+              class="button restaurants-search-form__button js-restaurants-search-pickup js-restaurants-search-button gtm-homepage-pickup-button"
+              data-gtm-cta="findRestaurant_main" data-testid="pickup_button">Pick-Up</button>
+            <span class="tooltip-pickup"
+              title="Get your favorite meals to go with our new pick up feature! Hungry?"></span>
+            <button
+              class="button js-restaurants-search-submit restaurants-search-form__button--reduced gtm-homepage-delivery-button restaurants-search-form__button"
+              data-gtm-cta="findRestaurant_main"><i class="fa fa-map-marker-alt"></i></button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-------second section----->
+  <div class="container" style="top: 300px;">
+    <div class="form-group bottom">
+      <h1>Partners</h1>
+      <p>You prepare the food, we handel the rest</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row img-background">
+      <div class="col-lg-6 col-md-12 offset-1">
+        <div class="card-body bg-white shadow-lg my-5" style="position: relative; top: 180px">
+          <div class="card-title ">
+            <h4 style="font-weight: bold; font-size: large;">List your restaurant or shop on foodpanda</h4>
+            <br>
+            <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+            <p>It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+              deliver them to hungry pandas – in a heartbeat!</p>
+            <p>Interested? Let's start our partnership today!</p>
+            <div class="form-group text-right">
+               <a href="stared/start.html" class="btn btn1">  GET STARTED</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------third section--------->
+  <div class="container">
+    <div class="form-group bottom">
+      <h1>Cities</h1>
+      <p>Find us in these cities and many more!</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Karachi.webp" alt="">
+          <div class="overlay">
+            <h2>Karachi</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Lahore.webp" alt="">
+          <div class="overlay">
+            <h2>Lahore</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Islamabad.webp" alt="">
+          <div class="overlay">
+            <h2>Islamabad</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Rawalpindi.webp" alt="">
+          <div class="overlay">
+            <h2>Rawalpindi</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Faisalabad.webp" alt="">
+          <div class="overlay">
+            <h2>Faisalabad</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Multan.webp" alt="">
+          <div class="overlay">
+            <h2>Multan</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Hyderabad.webp" alt="">
+          <div class="overlay">
+            <h2>Hyderabad</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Sialkot.webp" alt="">
+          <div class="overlay">
+            <h2>Sialkot</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Peshawar.webp" alt="">
+          <div class="overlay">
+            <h2>Peshawar</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Sukkur.webp" alt="">
+          <div class="overlay">
+            <h2>Sukkur</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Murree.webp" alt="">
+          <div class="overlay">
+            <h2>Muree</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/PanoAqil.webp" alt="">
+          <div class="overlay">
+            <h2>PanoAqil</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Bahawalpur.webp" alt="">
+          <div class="overlay">
+            <h2>Bahawalpur</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Sadiqabad.webp" alt="">
+          <div class="overlay">
+            <h2>Sadikabad</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Larkana.webp" alt="">
+          <div class="overlay">
+            <h2>Larkana</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Sahiwal.webp" alt="">
+          <div class="overlay">
+            <h2>Sahiwal</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-WahhCannt.webp" alt="">
+          <div class="overlay">
+            <h2>WahhCant</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/Abottabad.webp" alt="">
+          <div class="overlay">
+            <h2>Abbotabad</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-RahimYarKhan.webp" alt="">
+          <div class="overlay">
+            <h2>Rahim Yar Khan</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-DeraGhaziKhan.webp" alt="">
+          <div class="overlay">
+            <h2>DeraGhazi Khan</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Sargodha.webp" alt="">
+          <div class="overlay">
+            <h2>Sargodha</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Gujranwala.webp" alt="">
+          <div class="overlay">
+            <h2>Gujranwala</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Quetta.webp" alt="">
+          <div class="overlay">
+            <h2>Quetta</h2>
+            <a class="info" href="cities/index.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Okara.webp" alt="">
+          <div class="overlay">
+            <h2>Okara</h2>
+            <a class="info" href="#"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Jhelum.webp" alt="">
+          <div class="overlay">
+            <h2>Jhelum</h2>
+            <a class="info" href="#"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Mardan.webp" alt="">
+          <div class="overlay">
+            <h2>Mardan</h2>
+            <a class="info" href="#"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Gujrat.jpg.webp" alt="">
+          <div class="overlay">
+            <h2>Gujrat</h2>
+            <a class="info" href="#"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images/city-tile-Kamoke.webp" alt="">
+          <div class="overlay">
+            <h2>Kamoke</h2>
+            <a class="info" href="#"><i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="form-group bottom">
+      <h1>APP</h1>
+      <p>Put us in your pocket</p>
+    </div>
+  </div>
+<div class="container-fluid" style="background-color: #D70F64;">
+<div class="row">
+  <div class="col">
+    <br>
+    <div class="container my-4"style="top: 500px;">
+    <div class="form-group1 my-5 text-white" style="top: 100px;">
+      <h3>Download the food and groceries you love</h3>
+      <br>
+      <br>
+      <p>It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.</p>
+      <br>
+      <br>
+      <img src="images/apple.PNG">
+      <img src="images/google.PNG">
+      <img src="images/hello.PNG">
+    </div> 
+    </div>
+  </div>
+  <div class="col">
+    <div class="container">    
+<div class="form-group">
+<img src="images/home-foodpanda-apps.webp" class="img-fluid">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+ <!-------fourth  section----->
+ <div class="container">
+  <div class="form-group bottom">
+    <h1>Office</h1>
+    <p>Take your office out to lunch</p>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row img-background3">
+    <div class="col-lg-5 col-md-12 offset-1">
+      <div class="card-body bg-white shadow-lg my-5" style="position: relative; top: 180px">
+        <div class="card-title ">
+          <h4 style="font-weight: bold; font-size: large;">
+            Foodpanda for business</h4>
+          <br>
+          <p>Order lunch or fuel for work-from-home,<br> late nights in  the office, corporate events,<br> client meetings, and much more.</p>
+          <div class="form-group text-right">
+            <button class="btn btn1" style="margin-right: 90px;">GET STARTED</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<br>
+<br>
+<!-------------fifth section-->
+<div class="container">
+<h2>Order food and groceries online from the best restaurants and shops on foodpanda</h2>
+<br>
+<p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your everyday easier. Our online food delivery service has it all, whether you fancy Indian, Pakistani or Afghan cuisine, foodpanda Pakistan has over 15,000 restaurants available in top cities like Islamabad, Lahore, Rawalpindi, and Karachi. Did you know you can order your groceries and more from foodpanda, too? Check out foodpanda shops for favourite partners like Al-Fatah, Greenvalley and more. Sit back and relax – let foodpanda Pakistan take the pressure off your shoulders</p>
+<br>
+<h2>What's new?</h2>
+<br>
+<p>✓ Selection of premium restaurants, all kind of cuisines.</p>
+<p>✓ High quality delivery service.</p>
+<p>✓ Live chat feature to give App users instant help when they need it.</p>
+<p>✓ NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.</p>
+<hr>
+<h3 style="font-weight: bold;">Frequently Asked Questions</h3>
+<br>
+<h3 style="font-weight: bold;">How can I get foodpanda delivery?</h3>
+<br>
+<p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!</p>
+<br>
+<h3 style="font-weight: bold;">How can I order food in Pakistan?</h3>
+<br>
+<p>To order food delivery in Pakistan, follow these simple steps:</p>
+<h4 style="font-weight: bold; margin-left: 60px;">Find a restaurant.</h4>
+<p style=" margin-left: 60px;">Enter your delivery address in the location form to see all the places that deliver to your location. It can be your home, office, a hotel or even parks!</p>
+<h4 style="font-weight: bold; margin-left: 60px;">Choose your dishes</h4>
+<p style=" margin-left: 60px;">Browse the menu of the chosen restaurant, select your dishes and add them to your basket. When you are done, press the "Checkout" button.</p>
+<h4 style="font-weight: bold; margin-left: 60px;">Checkout & Payment</h4>
+<p style=" margin-left: 60px;">Check your order, payment method selection and exact delivery address. Simply follow the checkout instructions from there</p>
+<h4 style="font-weight: bold; margin-left: 60px;">Delivery</h4>
+<p style=" margin-left: 60px;">We will send you an email and SMS confirming your order and delivery time. Sit back, relax and wait for piping hot food to be conveniently delivered to you!.</p>
+<br>
+<h3 style="font-weight: bold;">Does foodpanda deliver 24 hours?</h3>
+<br>
+<p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late night delivery. Please check which places in Pakistan deliver to you 24 hours by using your address. You can also order groceries 24 hours a day via pandamart.</p>
+<br>
+<h3 style="font-weight: bold;">Can you pay cash for foodpanda?</h3>
+<br>
+<p>Yes, you can pay cash on delivery for foodpanda in Pakistan.</p>
+<br>
+<h3 style="font-weight: bold;">How can I pay foodpanda online?</h3>
+<br>
+<p>You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</p>
+<br>
+<h3 style="font-weight: bold;">Can I order foodpanda for someone else?</h3>
+<br>
+<p>Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are not correct and the order cannot be delivered, we won't be able to process a refund.</p>
+<br>
+<h3 style="font-weight: bold;">How much does foodpanda charge for delivery?</h3>
+<br>
+<p>Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and a restaurant you are ordering from. You can always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on "Free Delivery" icon on the top of your restaurants listing.</p>
+<br>
+<h3 style="font-weight: bold;">What restaurants let you order online?</h3>
+<br>
+<p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example,<a href="#"> KFC, McDonald's, Pizza Hut, OPTP, Hardee's, Domino's, Kababjees </a> and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.</p>
+<br>
+<h3 style="font-weight: bold;">Does foodpanda have minimum order?</h3>
+<br>
+<p>Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from and is indicated during your ordering process.</p>
+<br>
+<h3 style="font-weight: bold;">What is the difference between delivery and Pick-Up?</h3>
+<br>
+<p>If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.</p>
+<br>
+<div class="btn-group shadow-lg" style="width: 950px; background-color: white; color: black;">
+  <button class="btn btn2 btn-lg dropdown-toggle" type="button" data-toggle="dropdown"  aria-expanded="false">
+   <span style="margin-right: 710px; font-size: medium;"> Click to read more</span>
+  </button>
+  <div class="dropdown-menu" style="width: 950px;">
+    <div class="container">
+      <br>
+   <h2 style="font-weight: bold;">Choose from over 28 cuisines and order online for home delivery</h2>
+   <br>
+   <p>Starting from the first steps of ordering food online via foodpanda Pakistan, the experience is assured to satisfy every customer. Offering a great choice of food ranging from Steaks, Sushi,<a href="#"> Sandwiches </a>, BBQ, Tandoori Chicken, Fried Chicken to cuisines such as <a href="#"> Western, Italian, Mediterranean </a>, Korean, Lebanese, Bakery or great Ice Cream for Dessert, foodpanda provides a delivery service made to especially care for every necessity and exceed the expectations of every customer..</p>
+  <br>
+  <p> <a href="#"> Pizza in Karachi, Burger in Lahore </a> or <a href="#"> Sandwiches in Islamabad?</a> Among the great cuisines available on foodpanda, choosing the one cuisine you want to order online can be a challenging task; but rest assured, you can try one special cuisine every day and foodpanda will always keep its promise and keep delivering your favorite dishes of your favorite cuisines from your favorite restaurants straight to your doorsteps! Order great pizza from <a href="#"> California Pizza </a>. Many of your favourite dishes from around the world can easily be ordered using foodpanda, like Egg Fried Rice, fresh salad and many types of Chicken, like Chicken Biryani, Chicken Manchurian, Chicken Karahi, and Chicken Tikka.</p>
+<hr>
+<h3 style="font-weight: bold;">Order food and grocery online with the foodpanda app</h3><br>
+<p>Even when on the move, the <strong> free foodpanda mobile application </strong> for iOS, Android and Windows Phone, allows you to order food and groceries online anytime from anywhere. Whichever food you currently desire, we have the largest selection of restaurants for you to choose from, right here on foodpanda!</p>
+<br>
+<p>In three words, the process of ordering food online is <strong> simple, fast, and convenient </strong>. On the homepage you can start your order by entering your city and area, which leads you to the next page listing the number of total restaurants in your area. Next, you can either select the restaurant you want from the list or further refine your search result by using the cuisine filter on the left hand side of the page- all restaurants that offer your desired cuisine will then be displayed. You can now select your desired restaurant, look through the available online menu, adding all of your favorite appetizers, dishes, desserts as well as beverages to your online basket. Upon completion, you can go ahead and check-out your order; now all you have to do is await your food delivery. Your order will be processed, prepared and delivered straight to your home, office or your current location.</p>  
+<br><p>Some of the best restaurants in Pakistan are represented on the service, from the likes of Pizza experts <a href="#">Broadway Pizza </a> and <a href="#"> 14th Street Pizza </a>, to extreme Chinese cuisine from Ginsoy.</p>
+<br>
+<h3 style="font-weight: bolder;">Order food and grocery online with foodpanda now and enjoy a great dining experience!
+
+</h3>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="images/pic.PNG" alt="">
+
+    </div>
+    <div class="col-md-6">
+      <i style="font-size: 2.2rem;" class="fab fa-facebook offset-9"></i>
+      <i style="margin: 10px; font-size: 2.2rem;" class="fab fa-instagram  offset-"></i>
+    </div>
+  </div>
+</div>
+<br>
+<br><br><hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <br>
+      <p>&copy; 2021 foodpanda</p>
+    </div>
+    <div class="col-md-6">
+      <p> <a href="#" class="anchor"> Press </a><a href="#" class="anchor"> Help Center</a> <a href="#" class="anchor">Refunds with pandapay</a> <a href="#" class="anchor">Pandapay User Account<a href="#" class="anchor"> Terms and Conditions</a> <a href="#" class="anchor">Terms and conditions<a href="#" class="anchor"> Privacy policy <a href="#" class="anchor"> Security</a><a href="#" class="anchor"> Download foodpanda Apps</a><a href="#" class="anchor"> Careers</a> <a href="#" class="anchor">Suggest a restaurant</a> <a href="#" class="anchor">Corporate Customer</a> <a href="#" class="anchor">foodpanda Magazine</a> <a href="#" class="anchor">Partner with us foodpanda</a> <a href="#" class="anchor">Vouchers&Promo</a> <a href="#" class="anchor">Ramzan Deals</a> <a href="#" class="anchor">Update on COVID-19 in Pakistan</a> <a href="#" class="anchor">pandamart</a><a href="#" class="anchor"> Grocery Delivery</a><a href="#" class="anchor"> foodpanda home chef </a></p>
+    </div>
+  </div>
+</div>
+<hr>
+<br>
+<br><hr>
+<br>
+<footer>
+  <div class="container">
+    <p class="text-center">
+      Laos   |   Cambodia   |   Myanmar   |   Thailand   |   Hong Kong   |   Japan   |   Taiwan   |   Malaysia   |   Philippines   |   Singapore   |   Bangladesh   |   Hungary   |   Germany   |   Austria   |   Norway   |   Sweden   |   Finland   |   Czech Republic   |   Slovakia</p>
+  </div>
+  <br>
+  <br>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<script src="script.js"></script>
